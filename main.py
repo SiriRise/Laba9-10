@@ -18,8 +18,8 @@ def registration():
     if not username or not password:
         showwarning("Регистрация","Пожалуйста, заполните все поля")
         return
-    if len(username) <= 3:
-        showwarning("Регистрация", "Имя пользователя должно быть длиннее 3 символов")
+    if len(username) <= 2:
+        showwarning("Регистрация", "Имя пользователя должно быть длиннее 2 символов")
         return
 
     if len(password) < 8 or not any(char in password for char in string.punctuation):
